@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/welcomeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="103dp"
+        android:autoText="false"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Welcome to our Book reviews"
+        app:layout_constraintBottom_toTopOf="@+id/waitMsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/waitMsg"
+        android:layout_width="109dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="677dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Please wait"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/loadingImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMsg" />
+
+    <ImageView
+        android:id="@+id/loadingImg"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="677dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/waitMsg"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMsg"
+        app:srcCompat="@android:drawable/presence_away" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
